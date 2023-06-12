@@ -32,7 +32,3 @@ MongoTemplate을 사용해서 쿼리 날릴 수 있어용.
 
 @RepositoryRestResource
  */
-
-// TODO 1. 함수 그런거.. 명명 다시
-// TODO 2. GridFS 사용해보기.
-// TODO 3. 홈페이지로 ㄱㄱ

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>파일 리스트</title>
+</head>
+<body>
+
+<form action="/download" method="get">
+    <input type="submit" value="다운로드">
+    <table>
+        <thead>
+        <tr>
+            <th>선택</th>
+            <th>파일명</th>
+            <th>파일 타입</th>
+            <th>업로드 날짜</th>
+            <th>자세히</th>
+        </tr>
+        </thead>
+
+        <tbody>
+            <tr th:each="item : ${list}">
+                <td><input type="checkbox" th:value="${item.id}" name="downloadList"></td>
+                <td><span th:text="${item.fileName}"></span></td>
+                <td><span th:text="${item.contentType}"></span></td>
+                <td><span th:text="${item.uploadDateTime}"></span></td>
+                <td><a th:href="${'/detail/'+item.id}">자세히</a></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+
+</body>
+</html>

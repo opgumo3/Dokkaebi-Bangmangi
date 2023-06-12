@@ -1,4 +1,4 @@
-package com.example.mongodbdemo.controller.rest;
+package com.example.mongodbdemo.controller.animal;
 
 import com.example.mongodbdemo.document.Animal;
 import com.example.mongodbdemo.dto.AnimalRetrieveResponse;

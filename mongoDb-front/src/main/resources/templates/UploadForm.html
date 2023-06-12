@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>업로드 폼</title>
+</head>
+<body>
+<!-- form에 대한 옵션들이 많다. onSubmit, encType-->
+    <form method="post" action="/upload" enctype="multipart/form-data">
+        <label>파일</label>
+        <input type="file" name="file" required>
+        <input type="submit" name="파일 업로드">
+    </form>
+</body>
+</html>
